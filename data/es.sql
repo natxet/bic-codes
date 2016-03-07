@@ -1,14 +1,4 @@
-CREATE TABLE IF NOT EXISTS `swift` (
-  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
-  `country_id` char(2) CHARACTER SET latin1 NOT NULL DEFAULT 'ES',
-  `bank_code` char(4) CHARACTER SET latin1 NOT NULL DEFAULT '',
-  `swift` char(11) CHARACTER SET latin1 NOT NULL,
-  `bank_name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `country_id_and_bank_code` (`country_id`,`bank_code`)
-) ENGINE=InnoDB;
-
-INSERT INTO `swift` (`id`, `country_id`, `bank_code`, `swift`, `bank_name`)
+INSERT IGNORE INTO `swift` (`id`, `country_id`, `bank_code`, `swift`, `bank_name`)
 VALUES
 	(1,'ES','0003','BDEPESM1XXX','BANCO DE DEPOSITOS, S.A.'),
 	(2,'ES','0011','ALLFESMMXXX','ALLFUNDS BANK, S.A.'),
