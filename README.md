@@ -5,11 +5,11 @@ First, create the table:
 CREATE TABLE IF NOT EXISTS `bic_codes` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `country_code` char(2) CHARACTER SET latin1 NOT NULL DEFAULT 'ES',
-  `bank_number` char(4) CHARACTER SET latin1 NOT NULL DEFAULT '',
+  `country_bank_number` char(4) CHARACTER SET latin1 NOT NULL DEFAULT '',
   `bic_code` char(11) CHARACTER SET latin1 NOT NULL,
   `bank_name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `country_id_and_bank_code` (`country_id`,`bank_code`)
+  UNIQUE KEY `country_bank_number` (`country_code`,`country_bank_number`)
 ) ENGINE=InnoDB;
 ```
 
