@@ -13,6 +13,6 @@ CREATE TABLE IF NOT EXISTS `swift` (
 ) ENGINE=InnoDB;
 ```
 
-Then execute the SQL to insert the codes, you will find the SQL in the data directory of this repository.
+Then execute the SQL to insert the codes, you will find the SQL in the data directory of this repository. For instance [Spanish banks](data/es.sql)
 
 LAST UPDATED: 2016-03-07
