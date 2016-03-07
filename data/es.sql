@@ -1,5 +1,5 @@
 
-INSERT IGNORE INTO `bic_codes` (`id`, `country_code`, `bank_code`, `bic_code`, `bank_name`)
+INSERT IGNORE INTO `bic_codes` (`id`, `country_code`, `country_bank_number`, `bic_code`, `bank_name`)
 VALUES
 	(1,'ES','0003','BDEPESM1XXX','BANCO DE DEPOSITOS, S.A.'),
 	(2,'ES','0011','ALLFESMMXXX','ALLFUNDS BANK, S.A.'),
